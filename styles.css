@@ -1,0 +1,428 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: #0077b6; /* Attractive blue color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #667FEA; /* Darker blue for the navigation bar */
+    color: rgb(198, 39, 39);
+    text-align: center;
+    padding: 10px;
+    position:fixed;
+    width:100%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav:last-child,
+nav:nth-last-child(2){
+    margin-right:30px;
+    float:right;
+
+
+}
+
+#openSignupBtn,#openLoginBtn {
+    outline:none;
+    border:none;
+    background-color: #667FEA;
+    padding:0px;
+    font-size: 16px;
+    cursor:pointer;
+    float:right;
+    margin-right:30px;
+
+
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #00a8cc; /* Lighter blue color on hover */
+}
+
+main {
+    padding: 0;
+}
+
+section {
+    height: 100vh; /* Full viewport height for each section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Home Section */
+
+
+
+#home {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/* Recipes Section */
+#recipes {
+    background-color: white;
+    color: black;
+
+}
+
+
+
+/* Wellness Tips Section */
+#wellness {
+    background-color: white; /* Light green for wellness tips */
+    color: #333;
+}
+
+
+
+/* Contact & Submission Section */
+#contact {
+    background-color: white; /* Light blue for contact section */
+    color: #333;
+
+}
+
+
+
+/* Email Subscription Section */
+.email-subscription {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #667FEA; /* Reusing the header's blue color for the footer */
+    color: white;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* home section */
+#home{
+    background-image: url("images/fitness.jpeg");
+    color:white;
+    /* opacity:0.9; */
+    overflow:hidden;
+
+}
+#home p{
+    position:absolute;
+    right:30px;
+    top:90px;
+    font-size:70px;
+    font-style:italic;
+
+}
+#home p1{
+    position:absolute;
+    right:30px;
+    top:170px;
+    font-size:70px;
+    font-style:italic;
+
+}
+
+#recipehead{
+    position:absolute;
+    top:820px;
+    color:black;
+    font-size:50px;
+    left:650px;
+}
+
+/* recipes section */
+
+
+#recipes{
+
+    
+}
+
+
+
+
+#recipe1{
+    border:2px solid rgb(17, 191, 244);
+    padding:25px;
+    border-radius:10px;
+    border-width: 5px;
+    font-size:25px;
+    box-shadow:7px 7px rgb(86, 151, 173);
+    position:absolute;
+    left:80px;
+    top:950px;
+    background-color:rgba(91, 123, 143, 0.702);
+    font-style:italic;
+}
+
+#recipe1 a{
+    text-decoration: none;
+}
+
+
+
+#recipe2{
+    border:2px solid rgb(17, 191, 244);
+    padding:25px;
+    border-radius:10px;
+    border-width: 5px;
+    font-size:25px;
+    box-shadow:7px 7px rgb(86, 151, 173);
+    position:absolute;
+    right:80px;
+    top:950px;
+    background-color:rgba(91, 123, 143, 0.702);
+    font-style:italic;
+    z-index:0;
+}
+
+#recipe2 a{
+    text-decoration: none;
+}
+
+
+
+#recipe3{
+    border:2px solid rgb(17, 191, 244);
+    padding:25px;
+    border-radius:10px;
+    border-width: 5px;
+    font-size:25px;
+    box-shadow:7px 7px rgb(86, 151, 173);
+    position:absolute;
+    left:80px;
+    top:1350px;
+    background-color:rgba(91, 123, 143, 0.702);
+    font-style:italic;
+}
+
+#recipe3 a{
+    text-decoration: none;
+}
+
+
+
+#recipe4{
+    border:2px solid rgb(17, 191, 244);
+    padding:25px;
+    border-radius:10px;
+    border-width: 5px;
+    font-size:25px;
+    box-shadow:7px 7px rgb(86, 151, 173);
+    position:absolute;
+    right:80px;
+    top:1350px;
+    background-color:rgba(91, 123, 143, 0.702);
+    font-style:italic;
+}
+
+#recipe4 a{
+    text-decoration: none;
+}
+
+
+
+#recipe5{
+    border:2px solid rgb(17, 191, 244);
+    padding:25px;
+    border-radius:10px;
+    border-width: 5px;
+    font-size:25px;
+    box-shadow:7px 7px rgb(86, 151, 173);
+    position:absolute;
+    left:400px;
+    top:1150px;
+    background-color:rgba(91, 123, 143, 0.702);
+    font-style:italic;
+}
+
+#recipe5 a{
+    text-decoration: none;
+}
+
+/* wellness */
+
+#wellnessinfo{
+    width:50%;
+    height:80vh;
+    border:2px solid orange;
+    box-shadow: 2px 2px rgb(181, 151, 97)0;
+    align-items: left;
+    position:absolute;
+    justify-content: left;
+    left:10px;
+    font-size:20px;
+    line-height:30px;
+    text-align:justify;
+    padding:15px;
+    font-style:italic;
+    
+}
+
+#wellnesshead{
+    position:absolute;
+    color:rgb(20, 91, 214);
+    top:1620px;
+    right:180px;
+    font-size:40px;
+    font-style: initial;
+}
+
+#tipinfo{
+    position: absolute;
+    right:130px;
+    top:1700px;
+    text-align:justify;
+
+}
+
+#tipinfo1::before{
+    content : '*  ';
+}
+
+
+/* contact-form */
+
+#cont{
+    font-size: 40px;
+    margin-bottom:40px;
+    color:black;
+}
+
+
+
+.contact-form {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width:400px;
+    height:400px;
+    background-color:#93b6dc;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#submitlink{
+    text-decoration:none;
+    font-size:20px;
+    border:1px solid #007bff;
+    padding:5px;
+    background-color: #007bff;
+    border-radius:5px;
+    color:blue;
+
+}
+
+#submitlink:hover{
+    color:blue;
+    background-color: #99b9db;
+}
+
+/* loginform */
+
+    
